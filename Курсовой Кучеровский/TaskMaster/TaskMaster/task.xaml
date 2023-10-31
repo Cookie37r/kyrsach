@@ -1,0 +1,234 @@
+﻿<Window x:Class="TaskMaster.task"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskMaster"
+        mc:Ignorable="d"
+        Title="Задачник" Height="700" Width="1220" WindowStartupLocation="CenterScreen" Icon="/icons8-тм-48.png">
+
+    <Window.Resources>
+
+        <Style x:Key="ListBoxItemStyle" TargetType="ListBoxItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                <ControlTemplate TargetType="ListBoxItem">
+                        <Border Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="Red"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="{x:Static SystemColors.ControlLightBrush}" />
+                                <Setter Property="Foreground" Value="{x:Static SystemColors.GrayTextBrush}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+    
+    <Grid x:Name="mane">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.45*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid x:Name="menu" Background="#FFB1ACAC" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="70"/>
+            </Grid.RowDefinitions>
+
+
+            <Grid Grid.Row="0">
+                <Image x:Name="staffImage" Source="/photorab.png" Width="230" Height="320"/>
+            </Grid>
+
+            <TextBlock x:Name="Full_name" Grid.Row="1" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="28" 
+                       Foreground="#FF4A4444" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Run Language="ru-ru" Text="Уткин Евгений Иванович" BaselineAlignment="Center"/></TextBlock>
+
+            <TextBlock x:Name="Dolzhnost" Grid.Row="2" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="28" 
+                       Foreground="#FF4A4444" HorizontalAlignment="Center">
+                <Run Language="ru-ru" Text="Менеджер" BaselineAlignment="Center"/></TextBlock>
+
+            <Button Name="exitakk" Style="{StaticResource CustomButtonStyle}" Grid.Row="3" Content="Выйти из аккаунта" Click="exitakk_Click"/>
+        </Grid>
+
+        <Grid x:Name="manechast" Grid.Column="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="taskbar" Grid.Row="0" Background="#FFB1ACAC">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <ComboBox Name="typeCb" Width="170" Margin="10,5,25,5" FontFamily="Bahnschrift SemiBold" FontSize="20"/>
+                    <ComboBox Name="statusCb" Width="170" Margin="0,5,5,5" FontFamily="Bahnschrift SemiBold" FontSize="20"/>
+                    <Button x:Name="serchbt" Style="{StaticResource ImgButtonStyle}" HorizontalAlignment="Right"  
+                            Grid.Column="1" VerticalAlignment="Center" Click="serchbt_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/serch.png"/>
+                        </Button.Background>
+                    </Button>
+
+                    <Button x:Name="resetFilterbt" Grid.Column="1" Style="{StaticResource ImgButtonStyle}" 
+                     Click="resetFilterbt_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/icons8-обновить-48.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+
+                <Button x:Name="donebt" Grid.Column="1"  Style="{StaticResource ImgButtonStyle}" 
+                     Margin="0,0,20,0"  Click="donebt_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/icons8-кнопка-с-галочкой-48.png"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+
+            <ListBox Name="TaskList" Visibility="Visible" Grid.Row="1" Background="White" d:ItemsSource="{d:SampleData ItemCount=4}" 
+    ScrollViewer.HorizontalScrollBarVisibility="Hidden" BorderBrush="White" HorizontalContentAlignment="Stretch">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem" BasedOn="{StaticResource ListBoxItemStyle}" />
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Black" BorderThickness="1" Padding="10, 10, 10, 10"  HorizontalAlignment="Stretch">
+                            <Grid MinHeight="170"   Margin="0" MaxWidth="730">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition  Height="120"/>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <Grid Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- первая строка -->
+                                    <TextBlock x:Name="type" Grid.Column="0" FontFamily="Bahnschrift SemiBold" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                            <Run Language="ru-ru" Text="{Binding id_type}"/></TextBlock>
+                                    <TextBlock x:Name="location" Grid.Column="1" TextAlignment="Center" FontFamily="Bahnschrift SemiBold" FontSize="24" VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center">
+                                            <Run Language="ru-ru" Text="{Binding location}"/></TextBlock>
+                                    <TextBlock x:Name="sroc" Grid.Column="2" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="26" Style="{StaticResource OverdueTaskStyle}"  HorizontalAlignment="Right" VerticalAlignment="Center">
+                                            <Run Language="ru-ru" Text="{Binding sroc}"/></TextBlock>
+                                </Grid>
+
+                                <!-- Вторая строка -->
+                                <TextBlock x:Name="text" Grid.Row="1" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="24" Foreground="#FF4A4444">
+                       <Run Language="ru-ru" Text="{Binding text}"/></TextBlock>
+
+                                <Grid Grid.Row="2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid Grid.Row="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- Третья строка -->
+                                        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                                            <TextBlock Grid.Column="0" TextWrapping="Wrap" FontFamily="Bahnschrift SemiBold" FontSize="26" Foreground="#FF4A4444"  HorizontalAlignment="Left" >
+                                                       <Run Language="ru-ru" Text="{Binding status}"/></TextBlock>
+                                            <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" Background="#FFE0E0E0" BorderBrush="Black" BorderThickness="2" FontSize="20" VerticalAlignment="Center" Margin="10,0,0,0" Style="{StaticResource CheckBoxStyle}"></CheckBox>
+                                        </StackPanel>
+
+                                        <Button x:Name="resbt" Grid.Column="1" FontSize="17"  HorizontalAlignment="Center" Width="130" Height="30" Margin="0" Style="{StaticResource ResButtonStyle}"
+                                                FontFamily="Yu Gothic UI Semibold" BorderThickness="0" Background="White" Click="resbt_Click" >
+                                            <Button.Content>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="Auto" />
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <TextBlock Text="РЕЗУЛЬТАТ" VerticalAlignment="Center" Grid.Column="0" />
+                                                    <Image Source="/icons8-двойная-стрелка-вниз-30.png" Grid.Column="1"  Margin="5,0,0,0" VerticalAlignment="Center" Width="22" />
+                                                </Grid>
+                                            </Button.Content>
+                                        </Button>
+                                        <TextBlock x:Name="time" Grid.Column="2" TextWrapping="Wrap" Margin="0"  HorizontalAlignment="Right" FontFamily="Bahnschrift SemiBold" FontSize="23" Foreground="#FF777272" VerticalAlignment="Center">
+                            <Run Language="ru-ru" Text="{Binding time}"/></TextBlock>
+                                    </Grid>
+
+                                    <Grid Name="resgrid" Grid.Row="1" Visibility="Collapsed">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition  Width="1.7*"/>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition Width="0.5*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <!-- Результат -->
+                                        <TextBox x:Name="commenttb" Text="{Binding comment}" Grid.Column="0" Margin="0, 7" BorderThickness="1.5"  Foreground="#FF121010" FontSize="18"
+                                                 TextWrapping="Wrap" BorderBrush="#ED1C24" FontWeight="Bold"/>
+                                        <Grid Grid.Column="1">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+                                            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <Button  x:Name="filebt" Grid.Row="2" Style="{StaticResource ImgButtonStyle}"
+                                                           Margin="0,0,5,0" Click="filebt_Click">
+                                                    <Button.Background>
+                                                        <ImageBrush ImageSource="/icons8-скрепка-48.png"/>
+                                                    </Button.Background>
+                                                </Button>
+                                                <TextBox x:Name="filetb" Text="{Binding fileResult}" FontSize="18" Foreground="#FF121010" FontWeight="Bold" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" BorderBrush="#ED1C24" 
+                                                TextWrapping="NoWrap" VerticalAlignment="Center" Width="165" Background="{x:Null}" Height="27"></TextBox>
+                                            </StackPanel>
+                                            
+                                            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <Button x:Name="imgebt"  Grid.Row="2" Width="38" Height="39" Style="{StaticResource ImgButtonStyle}"
+                                                     Margin="0,0,5,0" Click="imgebt_Click">
+                                                    <Button.Background>
+                                                        <ImageBrush ImageSource="/icons8-фото-32 (1).png"/>
+                                                    </Button.Background>
+                                                </Button>
+                                                <TextBox Name="imgtb" Text="{Binding photoResult}" FontSize="18" Foreground="#FF121010" FontWeight="Bold" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" BorderBrush="#ED1C24" 
+                                                TextWrapping="NoWrap" VerticalAlignment="Center" Width="165" Background="{x:Null}" Height="27" ></TextBox>
+                                            </StackPanel>
+                                        </Grid>
+                                        <Button x:Name="sendbt" HorizontalAlignment="Center"  Grid.Column="2" Height="76" Width="76" Style="{StaticResource ImgButtonStyle}"
+                                                          VerticalAlignment="Center" Margin="0" BorderBrush="{x:Null}" Click="sendbt_Click">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="/icons8-отправить-96.png"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.Resources>
+                    <Style TargetType="ScrollViewer" BasedOn="{StaticResource MainScrollViewer}" />
+                </ListBox.Resources>
+            </ListBox>
+        </Grid>
+
+    </Grid>
+</Window>

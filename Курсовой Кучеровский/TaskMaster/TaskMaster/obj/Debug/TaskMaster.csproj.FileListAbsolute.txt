@@ -1,0 +1,121 @@
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.AssemblyReference.cache
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\MainWindow.g.cs
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\App.g.cs
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.cache
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.lref
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe.config
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.pdb
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\MainWindow.baml
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.g.resources
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.Properties.Resources.resources
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.GenerateResource.cache
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.CoreCompileInputs.cache
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.exe
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.pdb
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\admin.g.cs
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\task.g.cs
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\admin.baml
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\task.baml
+C:\Users\RomaCookie\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.o_prog.resources
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.AssemblyReference.cache
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.SuggestedBindingRedirects.cache
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\admin.g.cs
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\MainWindow.g.cs
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\task.g.cs
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\App.g.cs
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.cache
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.lref
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.exe
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.pdb
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe.config
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.pdb
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\admin.baml
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\MainWindow.baml
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\task.baml
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.g.resources
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.o_prog.resources
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.Properties.Resources.resources
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.GenerateResource.cache
+C:\Users\cookie37\Desktop\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.CoreCompileInputs.cache
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe.config
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.pdb
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.AssemblyReference.cache
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\admin.g.cs
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\MainWindow.g.cs
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\task.g.cs
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\App.g.cs
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.cache
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.lref
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\admin.baml
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\MainWindow.baml
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\task.baml
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.g.resources
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.o_prog.resources
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.Properties.Resources.resources
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.GenerateResource.cache
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.CoreCompileInputs.cache
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.exe
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.pdb
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\Style\maneStyle.baml
+C:\Users\RomaCookie\Desktop\Задачник-20231012T074742Z-001\Задачник\TaskMaster\TaskMaster\obj\Debug\App.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe.config
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\bin\Debug\TaskMaster.pdb
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.AssemblyReference.cache
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\Style\maneStyle.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\admin.g.cs
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\MainWindow.g.cs
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\task.g.cs
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\App.g.cs
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.cache
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.lref
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\App.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\admin.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\MainWindow.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\task.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.g.resources
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.o_prog.resources
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.Properties.Resources.resources
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.GenerateResource.cache
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.CoreCompileInputs.cache
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.exe
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.pdb
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\AdminAdd.g.cs
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskAdd.g.cs
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\UsersAdd.g.cs
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\AdminAdd.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskAdd.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\UsersAdd.baml
+C:\Users\RomaCookie\Desktop\Задачник новый\Задачник\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.ResolveComReference.cache
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe.config
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\bin\Debug\TaskMaster.exe
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\bin\Debug\TaskMaster.pdb
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.AssemblyReference.cache
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.ResolveComReference.cache
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\Style\maneStyle.baml
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\admin.g.cs
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\AdminAdd.g.cs
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\MainWindow.g.cs
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\task.g.cs
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskAdd.g.cs
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\UsersAdd.g.cs
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\App.g.cs
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.cache
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster_MarkupCompile.lref
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\App.baml
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\admin.baml
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\AdminAdd.baml
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\MainWindow.baml
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\task.baml
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskAdd.baml
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\UsersAdd.baml
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.g.resources
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.o_prog.resources
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.Properties.Resources.resources
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.GenerateResource.cache
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.csproj.CoreCompileInputs.cache
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.exe
+C:\Users\RomaCookie\Desktop\TaskMaster\TaskMaster\obj\Debug\TaskMaster.pdb

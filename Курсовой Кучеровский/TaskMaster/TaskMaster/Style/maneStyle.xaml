@@ -1,0 +1,130 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    
+    <Style x:Key="DefaultScrollViewer" TargetType="ScrollViewer">
+        <Style.Resources>
+            <Style TargetType="ScrollBar">
+                <Setter Property="Width" Value="10"/>
+                <Setter Property="Margin" Value="-4 5 0 5"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ScrollBar">
+                            <Grid>
+                                <Border CornerRadius="5"  Background="#FFB1ACAC" Width="10"/>
+                                <Track x:Name="PART_Track"
+                                            Grid.Column="0"
+                                            IsDirectionReversed="True">
+                                    <Track.Thumb>
+                                        <Thumb Background="#ED1C24" Width="8"  />
+                                    </Track.Thumb>
+                                </Track>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="Thumb">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Thumb">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="5"/>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Style.Resources>
+    </Style>
+
+    <Style x:Key="TestScrollViewer" TargetType="ScrollViewer" BasedOn="{StaticResource DefaultScrollViewer}">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsTestOpened}" Value="true">
+                <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsTestOpened}" Value="false">
+                <Setter Property="VerticalScrollBarVisibility" Value="Disabled"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="MainScrollViewer" TargetType="ScrollViewer" BasedOn="{StaticResource TestScrollViewer}">
+        <Setter Property="HorizontalScrollBarVisibility" Value="Disabled"/>
+    </Style>
+
+    <Style x:Key="CustomButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Foreground" Value="#FF161616"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="FontFamily" Value="Dubai Medium"/>
+        <Setter Property="Padding" Value="7"/>
+        <Setter Property="BorderThickness" Value="3"/>
+        <Setter Property="Height" Value="55"/>
+        <Setter Property="Width" Value="188"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" 
+                        CornerRadius="5" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" Value="Red"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="{x:Static SystemColors.ControlLightBrush}" />
+                            <Setter Property="Foreground" Value="{x:Static SystemColors.GrayTextBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ImgButtonStyle" TargetType="Button" BasedOn="{StaticResource CustomButtonStyle}">
+        <Setter Property="BorderThickness" Value="3"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="BorderThickness" Value="1.8"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+    </Style>
+
+    <Style x:Key="AdminButtonStyle" TargetType="Button" BasedOn="{StaticResource CustomButtonStyle}">
+        <Setter Property="Height" Value="75"/>
+        <Setter Property="Width" Value="210"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontFamily" Value="Candara"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
+    <Style x:Key="OverdueTaskStyle" TargetType="TextBlock">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsOverdue}" Value="True">
+                <Setter Property="Foreground" Value="Red" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Стиль для CheckBox, который скрывает его, если задача выполнена -->
+    <Style x:Key="CheckBoxStyle" TargetType="CheckBox">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding status}" Value="Выполнено">
+                <Setter Property="Visibility" Value="Hidden" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Стиль для кнопки resbt, который скрывает её, если задача выполнена -->
+    <Style x:Key="ResButtonStyle" TargetType="Button" BasedOn="{StaticResource ImgButtonStyle}">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding status}" Value="Выполнено">
+                <Setter Property="Visibility" Value="Hidden" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+</ResourceDictionary>

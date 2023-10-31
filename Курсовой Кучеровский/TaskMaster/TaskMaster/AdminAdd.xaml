@@ -1,0 +1,101 @@
+﻿<Window x:Class="TaskMaster.AdminAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskMaster"
+        mc:Ignorable="d"
+        Title="Редактирование администратора"  Foreground="#ED1C24" Height="600" Width="650" Icon="/icons8-тм-48.png" WindowStartupLocation="CenterScreen">
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="BD">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <DataGrid x:Name="dataGridAdmin" Grid.Column="1" Margin="5" AutoGenerateColumns="False" FontSize="16">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding ID_user}" Visibility="Collapsed"/>
+                    <DataGridTextColumn Header="Логин" Binding="{Binding Login}" Width="*"/>
+                    <DataGridTextColumn Header="Пароль" Binding="{Binding Password}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <Grid x:Name="toolbar" Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.Column="1" Margin="8" Stroke="Black" 
+                    RadiusX="15" RadiusY="15" Fill="#FF373030" Opacity="0.25"/>
+
+            <Rectangle Grid.Column="0" Margin="8" Stroke="Black" 
+                    RadiusX="15" RadiusY="15" Fill="#FF373030" Opacity="0.25"/>
+
+            <Grid Margin="9" >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock HorizontalAlignment="Center" 
+                FontFamily="Bahnschrift SemiBold" 
+                FontSize="24" 
+                Foreground="#FF4A4444"
+                TextWrapping="Wrap" Text="Логин:" VerticalAlignment="Center"/>
+
+                <TextBlock HorizontalAlignment="Center" 
+                FontFamily="Bahnschrift SemiBold" 
+                FontSize="24" 
+                Foreground="#FF4A4444"
+                TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Center" Grid.Row="1"/>
+
+                <TextBox x:Name="logintb" Grid.Column="1" HorizontalAlignment="Left" BorderBrush="#ED1C24"  FontFamily="Bahnschrift SemiBold" FontSize="18"
+                     TextWrapping="NoWrap" VerticalAlignment="Center" Width="185" Background="White" Height="27"/>
+
+                <TextBox x:Name="passwordtb" Grid.Column="1"  FontFamily="Bahnschrift SemiBold" FontSize="18" Grid.Row="1" HorizontalAlignment="Left" BorderBrush="#ED1C24" 
+                     TextWrapping="NoWrap" VerticalAlignment="Center" Width="185" Background="White" Height="27"/>
+
+   
+
+            </Grid>
+
+            <Grid x:Name="bt" Grid.Column="1">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Content="Добавить" x:Name="add" Width="150" FontSize="21" Click="add_Click"
+                        FontFamily="Dubai Medium" Margin="0, 10, 0, 0" Style="{StaticResource CustomButtonStyle}">
+                </Button>
+
+                <Button Grid.Row="1" Content="Удалить" x:Name="delete" Width="150" FontSize="21" Click="delete_Click"
+                        FontFamily="Dubai Medium" Margin="0, 10, 0, 0" Style="{StaticResource CustomButtonStyle}">
+                </Button>
+
+                <Button Grid.Row="2" Content="Сохранить" x:Name="save"  Width="150" FontSize="21" Click="save_Click"
+                        FontFamily="Dubai Medium" Margin="0, 10, 0, 0" Style="{StaticResource CustomButtonStyle}">
+                </Button>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+
+</Window>
